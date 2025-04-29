@@ -16,18 +16,37 @@
 
 ## 安装指南
 ```bash
-# 创建虚拟环境
-python -m venv .venv
+#下载好uv
+# 使用pipx安装（推荐隔离环境）
+pip install uv
 
-# 激活环境
-.venv\Scripts\activate
+# 验证安装
+uv --version
+#拉取代码
+git clone https://github.com/hnking-star/fofa_MCP.git
 
-# 安装依赖
-pip install -r requirements.txt
+#cuersor或者其他clint配置mcpServers
+"mcpServers": {
+    "fofa-mcp-server": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--active",
+        "F:\\ai\\mcp\\fofamcp\\fofa\\fofa.py"
+      ]
+    }
+}
+
+配置key
+![image](https://github.com/user-attachments/assets/0e5a01a9-06bb-436f-810a-84314121df06)
+
+
 ```
 
 ## 使用示例
 ```python
+![image](https://github.com/user-attachments/assets/b8fdccc5-6d0e-4573-add4-4f6707903b7c)
+
 from fofa import get_alerts
 
 # 基本查询
