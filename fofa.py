@@ -11,7 +11,7 @@ mcp = FastMCP("fofasearch")
 OPENWEATHER_API_BASE = "https://fofa.info/api/v1/search/all"
 USER_AGENT = "fofa-app/1.0"
 #api密钥
-OPENWEATHER_API_KEY = "c1c5a416e879ea635ba05713cd37b509"
+OPENWEATHER_API_KEY = "your_fofa_key"
 
 
 #核心工具函数：负责向openweater api发送请求，并且处理响应
